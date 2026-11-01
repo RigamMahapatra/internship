@@ -1,1 +1,57 @@
+#include <iostream>
+using namespace std;
 
+int main() {
+    cout << "Hello World.";
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
+    cout << "Sum = " << a + b;
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n % 2 == 0) {
+        cout << "Even";
+    } else {
+        cout << "Odd";
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int a = 0, b = 1, next;
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        cout << a << " ";
+
+        next = a + b;
+        a = b;
+        b = next;
+    }
+
+    return 0;
+}
